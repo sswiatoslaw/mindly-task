@@ -1,0 +1,86 @@
+.calendar-block{
+    margin-inline: 16px;
+    font-family: 'Montserrat', sans-serif;
+    .calendar-block__text{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;    
+        p{
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 24px;
+            color: #5B5B5B;
+        }
+    }
+    .calendar-block__icon{        
+        ion-icon{
+            margin-inline: 5px;
+            color: black;
+            width: 20px;
+            height: 20px;
+            transition: 0.5s;
+        }
+        ion-icon:hover{
+            color: #33BDE4;
+        }
+    }
+    .calendar-text__swiper{
+        margin: 15px;
+        text-align: center;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .calendar-date__swiper{
+        text-align: center;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 32px;
+        color: #000;
+    }
+}
+
+.calendar{
+    .swiper-slide-active{
+        ion-card{
+            background: #F0FBFF;
+            border: 1px solid #33BDE4;
+            box-sizing: border-box;
+            box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.04);
+            border-radius: 6px;
+            .calendar-text__swiper{
+                color: #33BDE4;
+            }
+            .calendar-date__swiper{
+                color: #33BDE4;
+            }
+        }
+    }
+}
+
+.calendar-time{
+    .swiper-wrapper{
+        .swiper-slide{
+            display: flex;
+            align-content: center; 
+            align-items: center;  
+            justify-content: center;
+            h1{
+                color: #C1C1C1;
+                font-weight: normal;
+                font-size: 24px;
+                transition: 0.5s;
+            }
+        }
+        .swiper-slide-active{
+            display: flex;
+            align-items: center;    
+            h1{
+                font-weight: bold;
+                font-size: 32px;
+                color: #33BDE4;
+
+            }
+        }
+    }
+}
